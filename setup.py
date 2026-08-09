@@ -19,7 +19,7 @@ def get_requirements(file_path: str) -> List[str]:
     return requirements
 
 setup(
-    name='End to End Data Science Project',
+    name='YouTube-Viewer-Sentiment-Analysis',
     version='0.0.1',
     author='A.Gireesh kumar Gowd',
     author_email='gireeshkumargowd@gmail.com',
