@@ -19,7 +19,7 @@ def get_requirements(file_path: str) -> List[str]:
     return requirements
 
 setup(
-    name='YouTube-Viewer-Sentiment-Analysis',
+    name='youtube_viewer_sentiment_analysis',
     version='0.0.1',
     author='A.Gireesh kumar Gowd',
     author_email='gireeshkumargowd@gmail.com',
