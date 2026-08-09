@@ -4,7 +4,7 @@ import logging
 
 logging.basicConfig(level=logging.INFO)
 
-project_name = "YouTube-Viewer-Sentiment-Analysis"
+project_name = "youtube_viewer_sentiment_analysis"
 
 list_of_files = [
     f"src/{project_name}/__init__.py",
