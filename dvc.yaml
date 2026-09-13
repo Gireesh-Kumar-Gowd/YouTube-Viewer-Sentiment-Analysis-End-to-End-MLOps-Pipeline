@@ -7,3 +7,12 @@ stages:
     - data_ingestion.test_size
     outs:
     - data/raw
+
+  data_preprocessing:
+    cmd: python -m src.youtubeViewerSentimentAnalysis.data.data_preprocessing
+    deps:
+    - data/raw/train.csv
+    - data/raw/test.csv
+    - src/youtubeViewerSentimentAnalysis/data/data_preprocessing.py
+    outs:
+    - data/interim
