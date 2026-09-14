@@ -42,3 +42,9 @@ stages:
     - src/youtubeViewerSentimentAnalysis/model/model_evaluation.py
     outs:
     - experiment_info.json
+
+  model_registration:
+    cmd: python -m src.youtubeViewerSentimentAnalysis.model.register_model
+    deps:
+    - experiment_info.json
+    - src/youtubeViewerSentimentAnalysis/model/register_model.py
