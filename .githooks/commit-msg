@@ -1,0 +1,10 @@
+#!/bin/sh
+
+commit_message="$1"
+
+if grep -Eiq '^[[:space:]]*Co-authored-by:' "$commit_message"; then
+  echo "Commit rejected: co-author trailers are not allowed in this repository." >&2
+  exit 1
+fi
+
+exit 0
